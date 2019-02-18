@@ -1,4 +1,4 @@
-(kicad_pcb (version 20170123) (host pcbnew no-vcs-found-d7a4fb7~58~ubuntu17.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.0-rc1-unknown-f1a6083~86~ubuntu18.10.1)
 
   (general
     (thickness 1.6)
@@ -47,8 +47,6 @@
     (zone_clearance 0.15)
     (zone_45_only no)
     (trace_min 0.125)
-    (segment_width 0.2)
-    (edge_width 0.15)
     (via_size 0.5)
     (via_drill 0.3)
     (via_min_size 0.5)
@@ -60,6 +58,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.15)
+    (segment_width 0.2)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -75,6 +75,7 @@
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
+      (creategerberjobfile false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -83,7 +84,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference false)
@@ -95,7 +96,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerber/))
+      (outputdirectory "gerber/"))
   )
 
   (net 0 "")
@@ -168,7 +169,7 @@
       (net 4 +3V3))
     (pad 2 smd rect (at 0.45 0 90) (size 0.4 0.6) (layers B.Cu B.Paste B.Mask)
       (net 3 "Net-(C2-Pad1)"))
-    (model ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -313,7 +314,7 @@
     (pad 5 thru_hole circle (at -5.7 -7.75) (size 3 3) (drill 2.1) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
     (model /home/hunz/projects/github/hwdev/usbhub/14381.wrl
-      (at (xyz 0 0.01 0.01))
+      (offset (xyz 0 0.2539999961853027 0.2539999961853027))
       (scale (xyz 4 4 4))
       (rotate (xyz -90 0 0))
     )
@@ -358,7 +359,7 @@
     (pad SH4 thru_hole circle (at -6.57 -7.47 180) (size 3.2 3.2) (drill 2.3) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
     (model /home/hunz/projects/github/hwdev/ca5/kicad/3d/usb_a-usb_a-2p-c.wrl
-      (at (xyz 0 -0.02283464566929134 0.2))
+      (offset (xyz 0 -0.5799999912892739 5.079999923706055))
       (scale (xyz 3.9 3.9 3.9))
       (rotate (xyz -90 0 0))
     )
@@ -393,7 +394,7 @@
       (net 1 +5V))
     (pad 2 smd rect (at 0.55 0 90) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -429,7 +430,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.55 0) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 3 "Net-(C2-Pad1)"))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -465,7 +466,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.55 0 270) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 4 +3V3))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -501,7 +502,7 @@
       (net 5 "Net-(C4-Pad1)"))
     (pad 2 smd rect (at 0.55 0 90) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -537,7 +538,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.55 0 270) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 6 "Net-(C5-Pad1)"))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -573,7 +574,7 @@
       (net 7 "Net-(C6-Pad1)"))
     (pad 2 smd rect (at 0.55 0) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -609,7 +610,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.55 0) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 4 +3V3))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -645,7 +646,7 @@
       (net 4 +3V3))
     (pad 2 smd rect (at 0.55 0 90) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -681,7 +682,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.55 0 180) (size 0.6 0.5) (layers B.Cu B.Paste B.Mask)
       (net 4 +3V3))
-    (model Capacitors_SMD.3dshapes/C_0402.wrl
+    (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -717,7 +718,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.45 0 180) (size 0.4 0.6) (layers B.Cu B.Paste B.Mask)
       (net 10 "Net-(R2-Pad1)"))
-    (model ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -753,7 +754,7 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.45 0 270) (size 0.4 0.6) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(R3-Pad1)"))
-    (model ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0402.wrl
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -794,7 +795,7 @@
       (net 4 +3V3))
     (pad 1 smd rect (at -1 0.95 180) (size 0.9 0.8) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model ${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23.wrl
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -879,7 +880,7 @@
       (net 15 /DM_DN1))
     (pad 1 smd rect (at -1.95 1.25 270) (size 0.85 0.3) (layers B.Cu B.Paste B.Mask)
       (net 4 +3V3))
-    (model Housings_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_Pitch0.5mm.wrl
+    (model ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -924,9 +925,9 @@
       (net 2 GND))
     (pad 1 smd rect (at -0.7 -0.55 180) (size 0.9 0.8) (layers B.Cu B.Paste B.Mask)
       (net 5 "Net-(C4-Pad1)"))
-    (model ${KISYS3DMOD}/Crystals.3dshapes/Crystal_SMD_SeikoEpson_TSX3225-4pin_3.2x2.5mm.wrl
+    (model ${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step
       (at (xyz 0 0 0))
-      (scale (xyz 0.16 0.16 0.16))
+      (scale (xyz 0.7 0.7 0.7))
       (rotate (xyz 0 0 0))
     )
   )
