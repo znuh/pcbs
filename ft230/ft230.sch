@@ -1,30 +1,6 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:linear
-LIBS:regul
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:ft230xq
+EESchema Schematic File Version 4
 LIBS:ft230-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -39,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L FT230XQ U1
+L ft230xq:FT230XQ U1
 U 1 1 59CBB9E6
 P 5400 3600
 F 0 "U1" H 5000 4100 50  0000 C CNN
@@ -50,7 +26,7 @@ F 3 "" H 5400 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 59CBBAFA
 P 5400 4300
 F 0 "#PWR01" H 5400 4050 50  0001 C CNN
@@ -61,7 +37,7 @@ F 3 "" H 5400 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L ft230-rescue:R R3
 U 1 1 59CBBB72
 P 6300 2950
 F 0 "R3" V 6200 2950 50  0000 C CNN
@@ -72,7 +48,7 @@ F 3 "" H 6300 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x04 J2
+L ft230-rescue:Conn_01x04 J2
 U 1 1 59CBBCFF
 P 7500 3200
 F 0 "J2" H 7600 3300 50  0000 L CNN
@@ -83,7 +59,7 @@ F 3 "" H 7500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 59CBBDF1
 P 7150 3300
 F 0 "#PWR02" H 7150 3050 50  0001 C CNN
@@ -94,7 +70,7 @@ F 3 "" H 7150 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR03
+L power:+3V3 #PWR03
 U 1 1 59CBBEC4
 P 7650 3500
 F 0 "#PWR03" H 7650 3350 50  0001 C CNN
@@ -105,7 +81,7 @@ F 3 "" H 7650 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR04
+L power:+3V3 #PWR04
 U 1 1 59CBBF9A
 P 4500 3000
 F 0 "#PWR04" H 4500 2850 50  0001 C CNN
@@ -116,7 +92,7 @@ F 3 "" H 4500 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L ft230-rescue:R R4
 U 1 1 59CBC039
 P 6550 3900
 F 0 "R4" V 6450 3900 50  0000 C CNN
@@ -127,7 +103,7 @@ F 3 "" H 6550 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L ft230-rescue:R R5
 U 1 1 59CBC085
 P 6550 4100
 F 0 "R5" V 6450 4100 50  0000 C CNN
@@ -138,7 +114,7 @@ F 3 "" H 6550 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C3
+L ft230-rescue:C C3
 U 1 1 59CBC175
 P 4500 3150
 F 0 "C3" H 4614 3196 50  0000 L CNN
@@ -149,7 +125,7 @@ F 3 "" H 4500 3150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 59CBC250
 P 4500 3300
 F 0 "#PWR05" H 4500 3050 50  0001 C CNN
@@ -160,7 +136,7 @@ F 3 "" H 4500 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L ft230-rescue:R R1
 U 1 1 59CBC267
 P 4050 3550
 F 0 "R1" V 3950 3550 50  0000 C CNN
@@ -171,7 +147,7 @@ F 3 "" H 4050 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L ft230-rescue:R R2
 U 1 1 59CBC2E6
 P 4050 3750
 F 0 "R2" V 3950 3750 50  0000 C CNN
@@ -182,7 +158,7 @@ F 3 "" H 4050 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C2
+L ft230-rescue:C C2
 U 1 1 59CBC39F
 P 3900 4000
 F 0 "C2" H 4015 4046 50  0000 L CNN
@@ -193,7 +169,7 @@ F 3 "" H 3900 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L ft230-rescue:C C1
 U 1 1 59CBC4AC
 P 3650 4000
 F 0 "C1" H 3765 4046 50  0000 L CNN
@@ -204,7 +180,7 @@ F 3 "" H 3650 4000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 59CBC538
 P 3900 4250
 F 0 "#PWR06" H 3900 4000 50  0001 C CNN
@@ -215,7 +191,7 @@ F 3 "" H 3900 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L ft230-rescue:LED D1
 U 1 1 59CBC8A8
 P 7200 4050
 F 0 "D1" H 7191 4266 50  0000 C CNN
@@ -226,7 +202,7 @@ F 3 "" H 7200 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L ft230-rescue:LED D2
 U 1 1 59CBC8FC
 P 7200 4250
 F 0 "D2" H 7200 4000 50  0000 C CNN
@@ -237,7 +213,7 @@ F 3 "" H 7200 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR07
+L power:+3V3 #PWR07
 U 1 1 59CBCA7C
 P 7500 4050
 F 0 "#PWR07" H 7500 3900 50  0001 C CNN
@@ -248,7 +224,7 @@ F 3 "" H 7500 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR08
+L power:+3V3 #PWR08
 U 1 1 59CBCC93
 P 4550 3950
 F 0 "#PWR08" H 4550 3800 50  0001 C CNN
@@ -259,7 +235,7 @@ F 3 "" H 4550 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR09
+L power:+3V3 #PWR09
 U 1 1 59CBCCED
 P 5600 2950
 F 0 "#PWR09" H 5600 2800 50  0001 C CNN
@@ -270,7 +246,7 @@ F 3 "" H 5600 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L ft230-rescue:C C4
 U 1 1 59CBCDB8
 P 5200 2650
 F 0 "C4" H 5314 2696 50  0000 L CNN
@@ -281,7 +257,7 @@ F 3 "" H 5200 2650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 59CBCEAD
 P 5200 2800
 F 0 "#PWR010" H 5200 2550 50  0001 C CNN
@@ -292,7 +268,7 @@ F 3 "" H 5200 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR011
+L power:+5V #PWR011
 U 1 1 59CBCF7B
 P 5200 2400
 F 0 "#PWR011" H 5200 2250 50  0001 C CNN
@@ -303,7 +279,7 @@ F 3 "" H 5200 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_OTG J1
+L ft230-rescue:USB_OTG J1
 U 1 1 59CBD396
 P 2900 3600
 F 0 "J1" H 2955 4067 50  0000 C CNN
@@ -314,7 +290,7 @@ F 3 "" H 3050 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR012
+L power:+5V #PWR012
 U 1 1 59CBD416
 P 3350 3400
 F 0 "#PWR012" H 3350 3250 50  0001 C CNN
@@ -325,7 +301,7 @@ F 3 "" H 3350 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 59CBD672
 P 2900 4100
 F 0 "#PWR013" H 2900 3850 50  0001 C CNN
@@ -408,7 +384,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 3550 3650 3850
 Wire Wire Line
-	3350 3550 3900 3550
+	3350 3550 3650 3550
 Wire Wire Line
 	3900 3750 3900 3850
 Wire Wire Line
@@ -442,9 +418,9 @@ Wire Wire Line
 Wire Wire Line
 	5300 4300 5300 4200
 Wire Wire Line
-	5300 4300 5500 4300
+	5300 4300 5400 4300
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 59CBDE8C
 P 6200 3500
 F 0 "#PWR014" H 6200 3250 50  0001 C CNN
@@ -473,7 +449,7 @@ Tx
 Text Label 7300 3100 2    60   ~ 0
 Rx
 $Comp
-L R R6
+L ft230-rescue:R R6
 U 1 1 59F30FB9
 P 6700 3100
 F 0 "R6" V 6600 3100 50  0000 C CNN
@@ -485,4 +461,8 @@ F 3 "" H 6700 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6250 3100 6550 3100
+Wire Wire Line
+	3650 3550 3900 3550
+Wire Wire Line
+	5400 4300 5500 4300
 $EndSCHEMATC
