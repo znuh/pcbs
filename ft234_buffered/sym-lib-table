@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ft234-rescue)(type Legacy)(uri ${KIPRJMOD}/ft234-rescue.lib)(options "")(descr ""))
+  (lib (name ft234xd)(type Legacy)(uri ${KIPRJMOD}/ft234xd.lib)(options "")(descr ""))
+  (lib (name ft230-cache)(type Legacy)(uri /home/hunz/projects/github/pcbs/ft230/ft230-cache.lib)(options "")(descr ""))
+)
