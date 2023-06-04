@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|141300000|75750000|00000000-0000-0000-0000-000059dd94ee|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|156600000|75110000|00000000-0000-0000-0000-00005c865e0f|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -174,9 +177,11 @@
       ],
       "track_widths": [
         0.0,
+        0.127,
         0.15,
         0.2,
         0.25,
+        0.4,
         0.5,
         0.8,
         1.0,
