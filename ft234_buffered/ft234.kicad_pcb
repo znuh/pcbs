@@ -47,7 +47,7 @@
       (layerselection 0x00010f8_ffffffff)
       (plot_on_all_layers_selection 0x0000000_00000000)
       (disableapertmacros false)
-      (usegerberextensions false)
+      (usegerberextensions true)
       (usegerberattributes true)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
